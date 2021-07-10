@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Screwjack Calculator</title>
+	<link rel="icon" type="image/x-icon" href="../assets/img/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="../css/calculator.css">
+	<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
+	<script type="text/javascript" src="../js/calculator.js"></script>
+</head>
+<body>
+	<h1>SCREWJACK CALCULATOR</h1>
+	<div id="container1">
+		<h2>Basic Information</h2></div>
+	<div class="container2">
+		Outer Diameter (D<sub>o</sub>):
+		<input id="OuterDiameter" type="number" name="OuterDiameter" placeholder="in mm">
+		<br/><hr>
+		Inner Diameter (D<sub>i</sub>):
+		<input id="InnerDiameter" type="number" name="InnerDiameter" placeholder="in mm">
+		<br/><hr>
+		Pitch (P):
+		<input id="Pitch" type="number" name="Pitch" placeholder="in mm">
+		<br/><hr>
+		Co-efficient of Friction (&Cup;):
+		<input id="friction" type="number" name="friction"><br/><hr>
+		Weight of load (W):
+		<input id="weight" type="number" name="weight" placeholder="in kg"><br/><br/>
+		<button onclick="results()" id="calculate">Calculate</button>
+	</div>
+	<br/>
+	<br/>
+	<div id="container1">
+		<h2>Results</h2></div>
+	<div class="container2">
+		Mean diameter (D<sub>m</sub>):<input id="demo" placeholder="in mm"><br/><hr>
+		Helix angle (&#913):<input id="angle" placeholder="in degrees"><br/><hr>
+		Is the screw self-locking or not:<input id="self"><br/><hr>
+		Efforts required to just raise the load (E<sub>1</sub>):<input id="Load" placeholder="in joules"><br/><hr>
+		Efforts required to lower the load (E<sub>2</sub>):<input id="lower" placeholder="in joules"><br/><hr>
+		Efficiency of Screwjack (n):<input id="efficiency"><br/><hr>
+		Maximum Efficiency (n<sub>max</sub>):<input id="efficienct"><br/><hr>
+		Mechanical Advantage:<input id="adv"><br/><br/>
+	</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+</body>
+</html>

@@ -308,10 +308,21 @@ label {
 }
 
 #redox{
-  border: none;
+  border-color: #d9d9d9;
+  border-width: 6px;
   padding: 10px;
   background-color: #555555;
   color: white;
+  border-radius: 10px;
+}
+
+#periodic{
+  border-color: #d9d9d9;
+  border-width: 6px;
+  padding: 10px;
+  background-color: #555555;
+  color: white;
+  border-radius: 10px;
 }
 
 button {
